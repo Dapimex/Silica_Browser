@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=silica-browser
+Exec=sailfish-qml silica-browser
+Name=Silica Browser
+Name[ru]=Браузер Silica

@@ -1,0 +1,30 @@
+Name: silica-browser
+Summary: Silica Browser
+Version: 1.0
+Release: 1
+Group: Qt/Qt
+URL: http://example.org/
+BuildArch: noarch
+License: LICENSE
+Sources:
+- '%{name}-%{version}.tar.bz2'
+Description: |
+  Browser application as Silica example.
+Configure: none
+Builder: qtc5
+
+PkgConfigBR:
+  - sailfishapp >= 1.0.3
+  - Qt5Core
+  - Qt5Qml
+  - Qt5Quick
+
+Requires:
+  - sailfishsilica-qt5 >= 0.10.9
+  - libsailfishapp-launcher
+
+Files:
+  - '%defattr(0644,root,root,-)'
+  - '%{_datadir}/%{name}'
+  - '%{_datadir}/applications/%{name}.desktop'
+  - '%{_datadir}/icons/hicolor/*/apps/%{name}.png'
